@@ -37,13 +37,22 @@ body {
         font-size: 18px;
         font-weight: 400;
     }
-    #miFormulario{
+    #container{
+      position: absolute;
       width: auto;
       top: 10%;
       left: 10%;
       right: 10%;
       margin: 0 0 0 0;
+      background: #fff;
     }
+   #container h2{
+      margin: 0 0 20px;
+      line-height: 1;
+      color: #2e71cc;
+      font-size: 18px;
+      font-weight: 400;
+  }
     input {
       outline: none;
       display: block;
