@@ -8,7 +8,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Aplicacion de registro de canciones</title>    
+    <title>Iniciar sesion</title>    
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/Proyecto web.css">
     <link rel="stylesheet" type="text/css" href="librerias/alertifyjs/css/alertify.css">

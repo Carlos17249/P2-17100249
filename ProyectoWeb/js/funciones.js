@@ -107,10 +107,10 @@ function eliminarDatos(id){
 
 function Validar(){
     if(document.getElementById('Usuario').value ==""){
-        alertify.error("Debes ingresar tu nombre de usuario")
+		alertify.error("Debes ingresar tu nombre de usuario")
         return false;
     }else if(document.getElementById('Contraseña').value ==""){
-        alerttify.error("Debes ingresar tu contraseña")
+		alertify.error("Debes ingresar tu contraseña")
         return false;
     }
     Enviar();
@@ -138,7 +138,7 @@ function Enviar(){
 		Contraseña = document.getElementById('Contraseña').value;
 		Usuario = document.getElementById('Usuario').value;		
 		ajax = objetoAjax();
-		ajax.open("POST", "Login.php", false);
+		ajax.open("POST", "php/Login.php", false);
 		ajax.onreadystatechange = function() {
 			if (ajax.readyState == 4){
                 Respuesta = (ajax.responseText)
@@ -147,7 +147,7 @@ function Enviar(){
 		ajax.setRequestHeader("Content-Type","application/x-www-form-urlencoded");
         ajax.send("&Usuario="+Usuario+"&Contraseña="+Contraseña)
         if (Respuesta == 0){
-            alertify.error("Usuario o contraseña incorrecto")
+			alertify.error("Usuario o contraseña incorrecto")
             return false;
             }
             else{
